@@ -1,4 +1,5 @@
 ## 用于生成接口测试用例的`datasets` 目录结构
+```
 datasets/
 │
 ├── 1/
@@ -9,10 +10,11 @@ datasets/
 │   └── (类似于1/目录的结构)
 │
 ...
-
+```
 ## 生成测试用例说明
 1.先运行`ProcessDataGenerateMerge.py`      进行数据清理，生成全量接口描述，以及从众多接口中找到生成测试用例所需接口集
 #### 运行`ProcessDataGenerateMerge.py`进行数据清理，生成全量接口描述，以及从众多接口中找到生成测试用例所需接口集后的`datasets` 目录的结构视图如下
+```
 datasets/
 │
 ├── 1/
@@ -28,8 +30,10 @@ datasets/
 |
 |
 ...
+```
 2.然后运行`GenerateByreActQTA.py`          根据ProcessDataGenerateMerge.py提供的接口集通过 reactAgent 生成接口测试用例
 #### 生成的QTA测试用例存放路径的项目目录结构：
+```
 medtesttestproj/
 │
 ├── MedTestlib/
@@ -46,7 +50,7 @@ medtesttestproj/
 ├── .pydevproject
 ├── manage.py
 └── settings.py
-
+```
 
 ## 运行已生成的测试用例
 cd .\medtesttestproj\
